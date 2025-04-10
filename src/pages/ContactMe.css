@@ -6,6 +6,13 @@
   animation: fadeIn 0.8s ease-in-out;
 }
 
+.tech-used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
 .linkedin-badge-custom {
   display: flex;
   align-items: center;
@@ -16,7 +23,7 @@
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   color: #e6e6e6;
-  max-width: 350px;
+  max-width: 450px;
   margin: 0 auto;
 }
 

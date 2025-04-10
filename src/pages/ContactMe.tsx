@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './ContactMe.css';
-import profilePic from '../images/sumanth.jpeg';
 import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
 import { ContactMe as IContactMe } from '../types';
 import { getContactMe } from '../queries/getContactMe';
@@ -28,9 +27,14 @@ const ContactMe: React.FC = () => {
         <div className="badge-content">
           <h3 className="badge-name">{userData?.name}</h3>
           <p className="badge-title">{userData.title}</p>
-          <p className="badge-description">
-            {userData.summary}
-          </p>
+          <div dangerouslySetInnerHTML={{__html: userData.summary}} />
+          <div className="tech-used">
+                {userData.techstack.split(', ').map((tech, i) => (
+                  <span key={i} className="tech-badge">
+                    {tech}
+                  </span>
+                ))}
+              </div>
           {/* <p className="badge-company">{userData.companyUniversity}</p> */}
           <a
             href={userData.linkedinlink}

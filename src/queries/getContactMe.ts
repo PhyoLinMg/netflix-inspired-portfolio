@@ -10,7 +10,9 @@ const GET_CONTACT_ME = `
         linkedinlink
         mobile
         name
+        availability
         summary
+        techstack
         title
         profilepicture {
             url

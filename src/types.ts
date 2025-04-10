@@ -46,6 +46,8 @@ export interface ContactMe {
   name: string;
   title: string;
   summary: string;
+  techstack: string;
+  availability: string;
   //companyUniversity: string;
   linkedinlink: string;
   email: string;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './NetflixTitle.css';
 import netflixSound from './netflix-sound.mp3';
 import { useNavigate } from 'react-router-dom';
-import logoImage from '../src/images/lm-logo-trans.png'; // Update with the path to your logo
+import logoImage from '../src/images/lm_logo_trans.png'; // Update with the path to your logo
 
 const NetflixTitle = () => {
   const [isClicked, setIsClicked] = useState(false);
