@@ -13,7 +13,6 @@ import Layout from './Layout';
 import Music from './pages/Music';
 import Reading from './pages/Reading';
 import Blogs from './pages/Blogs';
-import Certifications from './pages/Certifications';
 
 const App: React.FC = () => {
   return (
